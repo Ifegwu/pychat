@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+env
+
+# Ignoring pycache inside pychat
+pychat/__pycache__
+.vscode
+.idea
