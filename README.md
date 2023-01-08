@@ -62,4 +62,5 @@ spec:
 status: {}
 ```
 
-## You (type 'quit' to exit):
+You (type 'quit' to exit):
+```
