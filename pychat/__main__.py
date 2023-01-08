@@ -3,7 +3,7 @@ import os
 from argparse import ArgumentParser
 
 
-openai.api_key = "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"
+openai.api_key = "API_KEY"
 
 def main():
 
