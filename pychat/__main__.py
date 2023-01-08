@@ -2,8 +2,8 @@ import openai
 import os
 from argparse import ArgumentParser
 
-OPEN_API_KEY = "OPENAI_API_KEY"
 
+openai.api_key = "API_KEY"
 
 def main():
 
@@ -38,10 +38,12 @@ def main():
     print(f"Max tokens: {max_tokens}")
     print(f"Engine: {engine}")
 
-    open_ai_api_key = os.getenv(OPEN_API_KEY)
+    # open_ai_api_key = os.getenv(OPEN_API_KEY)
+    
+    OPEN_API_KEY = openai.api_key
 
-    if open_ai_api_key == None:
-        print("OPENAI_API_KEY required")
+    if OPEN_API_KEY  == None:
+        print(OPEN_API_KEY )
         exit(-1)
 
     query = query.strip()
